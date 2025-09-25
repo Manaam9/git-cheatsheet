@@ -83,3 +83,9 @@ graph LR;
     tracked/committed -- "изменения" --> modified;
     modified -- "git add" --> staged;
     tracked/committed -- "git rm" --> untracked;
+
+## Команды для работы со статусами:
+git status                 # Показать текущие статусы файлов
+git add <файл>            # Перевести файл в staged
+git restore --staged <файл> # Убрать файл из staged
+git rm <файл>             # Удалить файл из отслеживания
