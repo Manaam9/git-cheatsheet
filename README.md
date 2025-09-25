@@ -70,3 +70,16 @@ git log --author="Имя"     # Фильтр по автору
 ```bash
 git checkout <коммит>      # Переместить HEAD к конкретному коммиту
 git checkout main          # Вернуть HEAD к ветке main
+
+```markdown
+## Статусы файлов в Git
+
+Файлы в Git проходят через следующие состояния:
+
+```mermaid
+graph LR;
+    untracked -- "git add" --> staged;
+    staged -- "git commit" --> tracked/committed;
+    tracked/committed -- "изменения" --> modified;
+    modified -- "git add" --> staged;
+    tracked/committed -- "git rm" --> untracked;
