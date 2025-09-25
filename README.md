@@ -40,5 +40,3 @@ git merge <имя-ветки>       # Влить ветку в текущую
 git remote add origin <url-репозитория> # Добавить удалённый репозиторий
 git push -u origin main     # Загрузить изменения на GitHub
 git pull                    # Скачать изменения из GitHub
-
-# New
